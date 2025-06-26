@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <style>
+        /* @media (max-width:1492px) {
+            .s1 {
+
+                width: calc(187.238px + 148px);
+            }
+        } */
+
+        @media (max-height:849px) {
+            .jobs {
+                display: none;
+            }
+        }
+
+        @media (max-height:790px) {
+            .bmarks {
+                display: none;
+            }
+        }
+
+        /* @media (max-height:726px){
+            .lists{
+                display: none;
+            }
+        } */
+        @media (max-height:704px) {
+            .prem {
+                display: none;
+            }
+        }
+
+        @media (max-height:764px) {
+            .lists {
+                display: none;
+            }
+        }
+
+        .nav>li {
+            cursor: pointer;
+        }
+
+        .nav>li,
+        .showprof {
+            padding: 8px 14px;
+            border-radius: 32px;
+        }
+
+        .nav>li:hover,
+        .showprof:hover,
+        .foryou:hover,
+        .following:hover {
+            background-color: rgba(50, 47, 47, 0.493);
+        }
+
+        .logo:hover {
+            background-color: rgba(50, 47, 47, 0.493);
+            border-radius: 50%;
+        }
+
+        .line2 {
+            visibility: hidden;
+        }
+
+        /* .search{
+            border:1.5px solid rgb(20, 114, 208);
+        } */
+        .searchbox>.search::placeholder {
+            color: rgba(255, 255, 255, 0.868);
+        }
+
+        .s1 {
+            width: 404px;
+            overflow: hidden;
+        }
+
+        .s2 {
+            width: calc(1536px - 404px);
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .live>.img {
+            background: url("./images/wh.jpeg");
+            object-fit: cover;
+        }
+
+        .whatshapc>input {
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .reply>.replyt {
+            color: rgb(29, 155, 240);
+        }
+
+        .reply,
+        .break {
+            display: none;
+        }
+
+        .left {
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        .right {
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        .picpost {
+            object-fit: cover;
+        }
+
+        @media (max-width:1391px){
+            .sp{
+                display:none;
+            }
+            .s1{
+                width:150px;
+            }
+            .navcont{
+                align-items: center;
+            }
+            .body{
+                justify-content: center;
+            }
+            body{
+                justify-content: center;
+            }
+            /* .navcont>.logo{
+                align-self: center;
+            } */
+        }
+        @media (max-width:1147px){
+            .rightrightboxes{
+                width:324.125px;
+            }
+            .body{
+                justify-content: center;
+            }
+            body{
+                justify-content: center;
+            }
+        }
+        /* .logoc:hover{
+            background-color: rgba(29, 156, 240, 0.153);
+        } */
+    </style>
+</head>
+
+<body class="overflow-x-hidden w-screen h-screen bg-black flex justify-center items-center">
+    <div class="body flex overflow-x-hidden justify-center w-384 bg-black">
+        <section
+            class="s1 bg-black border-r-2 border-gray-700 overflow-x-hidden h-screen w-[404.338px] pt-[12px] flex flex-col items-center">
+            <div class="navcont flex flex-col gap-3">
+
+                <div class="logo px-3 py-3">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="w-7.5 h-7.5 text-white"
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                </div>
+
+                <ul class="nav flex flex-col text-white gap-1">
+                    <li class="home flex gap-4 items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
+                            viewBox="0,0,256,256">
+                            <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <g transform="scale(5.12,5.12)">
+                                    <path
+                                        d="M25,1.05078c-0.2175,0 -0.43414,0.06898 -0.61914,0.20898l-23,17.95117c-0.43,0.34 -0.50992,0.9682 -0.16992,1.4082c0.34,0.43 0.9682,0.50992 1.4082,0.16992l1.38086,-1.07812v26.28906c0,0.55 0.45,1 1,1h14v-18h12v18h14c0.55,0 1,-0.45 1,-1v-26.28906l1.38086,1.07812c0.19,0.14 0.39914,0.21094 0.61914,0.21094c0.3,0 0.58906,-0.13086 0.78906,-0.38086c0.34,-0.44 0.26008,-1.0682 -0.16992,-1.4082l-23,-17.95117c-0.185,-0.14 -0.40164,-0.20898 -0.61914,-0.20898zM35,5v1.05078l6,4.67969v-5.73047z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <div class="sp font-bold text-[1.2rem]">Home</div>
+                    </li>
+                    <li class="exp flex gap-4 items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"
+                            color="#fefefe" fill="none">
+                            <path d="M17 17L21 21" stroke="#fefefe" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path
+                                d="M19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C15.4183 19 19 15.4183 19 11Z"
+                                stroke="#fefefe" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                        </svg>
+                        <div class="sp text-[1.2rem]">Explore</div>
+                    </li>
+                    <li class="noti flex gap-4 items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"
+                            color="#fefefe" fill="none">
+                            <path d="M15.5 18C15.5 19.933 13.933 21.5 12 21.5C10.067 21.5 8.5 19.933 8.5 18"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M19.2311 18H4.76887C3.79195 18 3 17.208 3 16.2311C3 15.762 3.18636 15.3121 3.51809 14.9803L4.12132 14.3771C4.68393 13.8145 5 13.0514 5 12.2558V9.5C5 5.63401 8.13401 2.5 12 2.5C15.866 2.5 19 5.634 19 9.5V12.2558C19 13.0514 19.3161 13.8145 19.8787 14.3771L20.4819 14.9803C20.8136 15.3121 21 15.762 21 16.2311C21 17.208 20.208 18 19.2311 18Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <div class="sp text-[1.2rem]">Notifications</div>
+                    </li>
+                    <li class="msgs flex gap-4 items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"
+                            fill="#FFFFFF">
+                            <path
+                                d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+                        </svg>
+                        <div class="sp text-[1.2rem]">Messages</div>
+                    </li>
+                    <li class="grok flex gap-4 items-center">
+                        <svg viewBox="0 0 33 32" aria-hidden="true" width="30" height="30" fill="white">
+                            <g>
+                                <path
+                                    d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466">
+                                </path>
+                            </g>
+                        </svg>
+                        <div class="sp text-[1.2rem]">Grok</div>
+                    </li>
+                    <li class="comm flex gap-4 items-center">
+                        <svg viewBox="0 0 24 24" width="30" height="30" fill="white" aria-hidden="true">
+                            <g>
+                                <path
+                                    d="M7.501 19.917L7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672-.444.478-.851 1.03-1.212 1.656-.507-.204-1.054-.329-1.658-.329-2.767 0-4.57 2.223-4.938 6.004H7.56c-.023.302-.05.599-.059.917zm15.998.056L23.528 21H9.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977s6.816 2.358 7 8.977zM21.437 19c-.367-3.781-2.17-6.004-4.938-6.004s-4.57 2.223-4.938 6.004h9.875zm-4.938-9c-.799 0-1.527-.279-2.116-.73-.836-.64-1.384-1.638-1.384-2.77 0-1.93 1.567-3.5 3.5-3.5s3.5 1.57 3.5 3.5c0 1.132-.548 2.13-1.384 2.77-.589.451-1.317.73-2.116.73zm-1.5-3.5c0 .827.673 1.5 1.5 1.5s1.5-.673 1.5-1.5-.673-1.5-1.5-1.5-1.5.673-1.5 1.5zM7.5 3C9.433 3 11 4.57 11 6.5S9.433 10 7.5 10 4 8.43 4 6.5 5.567 3 7.5 3zm0 2C6.673 5 6 5.673 6 6.5S6.673 8 7.5 8 9 7.327 9 6.5 8.327 5 7.5 5z" />
+                            </g>
+                        </svg>
+                        <div class="sp text-[1.2rem]">Communities</div>
+                    </li>
+                    <li class="prem flex gap-4 items-center">
+                        <svg viewBox="0 0 24 24" width="30" height="30" fill="white" aria-hidden="true">
+                            <g>
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </g>
+                        </svg>
+                        <div class="sp text-[1.2rem]">Premium</div>
+                    </li>
+                    <li class="profile flex gap-4 items-center">
+                        <svg viewBox="0 0 24 24" width="30" height="30" fill="white" aria-hidden="true">
+                            <g>
+                                <path
+                                    d="M5.651 19h12.698c-.337-1.8-1.023-3.21-1.945-4.19C15.318 13.65 13.838 13 12 13s-3.317.65-4.404 1.81c-.922.98-1.608 2.39-1.945 4.19zm.486-5.56C7.627 11.85 9.648 11 12 11s4.373.85 5.863 2.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H3.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46zM12 4c-1.105 0-2 .9-2 2s.895 2 2 2 2-.9 2-2-.895-2-2-2zM8 6c0-2.21 1.791-4 4-4s4 1.79 4 4-1.791 4-4 4-4-1.79-4-4z" />
+                            </g>
+                        </svg>
+                        <div class="sp text-[1.2rem]">Profile</div>
+                    </li>
+                    <li class="lists flex gap-4 items-center">
+                        <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"
+                            class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                            <g>
+                                <path fill="white"
+                                    d="M3 4.5C3 3.12 4.12 2 5.5 2h13C19.88 2 21 3.12 21 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-13C4.12 22 3 20.88 3 19.5v-15zM5.5 4c-.28 0-.5.22-.5.5v15c0 .28.22.5.5.5h13c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-13zM16 10H8V8h8v2zm-8 2h8v2H8v-2z">
+                                </path>
+                            </g>
+                        </svg>
+                        <div class="sp text-[1.2rem]">Lists</div>
+                    </li>
+                    <li class="bmarks flex gap-4 items-center">
+                        <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"
+                            class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                            <g>
+                                <path fill="white"
+                                    d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z">
+                                </path>
+                            </g>
+                        </svg>
+                        <div class="sp text-[1.2rem]">Bookmarks</div>
+                    </li>
+                    <li class="jobs flex gap-4 items-center">
+                        <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"
+                            class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                            <g>
+                                <path fill="white"
+                                    d="M19.5 6H17V4.5C17 3.12 15.88 2 14.5 2h-5C8.12 2 7 3.12 7 4.5V6H4.5C3.12 6 2 7.12 2 8.5v10C2 19.88 3.12 21 4.5 21h15c1.38 0 2.5-1.12 2.5-2.5v-10C22 7.12 20.88 6 19.5 6zM9 4.5c0-.28.23-.5.5-.5h5c.28 0 .5.22.5.5V6H9V4.5zm11 14c0 .28-.22.5-.5.5h-15c-.27 0-.5-.22-.5-.5v-3.04c.59.35 1.27.54 2 .54h5v1h2v-1h5c.73 0 1.41-.19 2-.54v3.04zm0-6.49c0 1.1-.9 1.99-2 1.99h-5v-1h-2v1H6c-1.1 0-2-.9-2-2V8.5c0-.28.23-.5.5-.5h15c.28 0 .5.22.5.5v3.51z">
+                                </path>
+                            </g>
+                        </svg>
+                        <div class="sp text-[1.2rem]">Jobs</div>
+                    </li>
+                    <li class=" orgs flex gap-4 items-center">
+                        <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"
+                            class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path fill="white"
+                                    d="M7.323 2h11.443l-3 5h6.648L6.586 22.83 7.847 14H2.523l4.8-12zm1.354 2l-3.2 8h4.676l-.739 5.17L17.586 9h-5.352l3-5H8.677z">
+                                </path>
+                            </g>
+                        </svg>
+                        <div class="sp text-[1.2rem]">Verified Orgs</div>
+                    </li>
+                    <li class=" more flex gap-4 items-center">
+                        <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                            <g>
+                                <path fill="white"
+                                    d="M3.75 12c0-4.56 3.69-8.25 8.25-8.25s8.25 3.69 8.25 8.25-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12zM12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-4.75 11.5c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25S6 11.31 6 12s.56 1.25 1.25 1.25zm9.5 0c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25zM13.25 12c0 .69-.56 1.25-1.25 1.25s-1.25-.56-1.25-1.25.56-1.25 1.25-1.25 1.25.56 1.25 1.25z" />
+                            </g>
+                        </svg>
+                        <div class="sp text-[1.2rem]">More</div>
+                    </li>
+                </ul>
+                <button class="Post bg-white py-2 px-12 rounded-3xl font-bold text-black">Post</button>
+            </div>
+            <div class="showprof absolute bottom-1.5 flex gap-6 items-center">
+                <div class="profcont flex items-center gap-4">
+
+                    <div class="first flex">
+                        <div class="circleprof bg-red-400 w-12 h-12 rounded-[50%]"></div>
+                        <div class="user flex flex-col ml-3">
+                            <div class="sp name text-white">Subhrajeet De</div>
+                            <div class="sp email text-[0.9rem] text-gray-500">subhra_c5@gail.com</div>
+                        </div>
+                    </div>
+                    <div class="sp second flex items-center self-center">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path
+                                    d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z" />
+                            </g>
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s2 bg-black overflow-x-hidden h-[100vh] flex">
+            <div class="left box-border w-[621.8px] text-white border-r-1 border-gray-700 no-scrollbar">
+                <header
+                    class="head w-[100%] h-16 flex justify-center items-center border-b-1 border-gray-700 box-border">
+                    <div class="foryou h-[100%] w-[50%] flex items-center justify-center">
+                        <div class="foryouh flex flex-col items-center font-bold h-full box-border cursor-pointer">
+                            <div class="flex-1 flex items-center w-full">
+                                For you
+                            </div>
+                            <div class="line bg-blue-600 w-full h-[3px] rounded-3xl"></div>
+                            <!-- <div class="foryoucontent text-white">
+                                For you
+                            </div> -->
+                        </div>
+
+                    </div>
+                    <div class="following h-[100%] w-[50%] flex items-center justify-center">
+                        <div class="followingh flex flex-col items-center font-bold h-full box-border cursor-pointer">
+                            <div class="flex-1 flex items-center w-full">
+                                Following
+                            </div>
+                            <div class="line2 bg-blue-600 w-full h-[3px] rounded-3xl"></div>
+                        </div>
+
+                    </div>
+                </header>
+                <div class="foryouhfollowingh">
+                    <div class="whatshap flex flex-col">
+                        <div class="whatshapc ml-[16px] mt-3 flex">
+                            <div class="circleprof bg-red-400 w-12 h-12 rounded-[50%]"></div>
+                            <div class="flex flex-col w-[80%]">
+                                <textarea placeholder="What's happening?"
+                                    class="outline-none text-[1.3rem] w-[100%] h-[46.86px] resize-none overflow-hidden p-2  pb-4 no-scrollbar"
+                                    onclick="replyandbreak()"></textarea>
+                                <div class="reply ml-4 flex gap-1.5 items-center">
+                                    <span>
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#1D9BF0"
+                                            width="16" height="16">
+                                            <path
+                                                d="M12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-.25 10.48L10.5 17.5l-2-1.5v-3.5L7.5 9 5.03 7.59c1.42-2.24 3.89-3.75 6.72-3.84L11 6l-2 .5L8.5 9l5 1.5-1.75 1.73zM17 14v-3l-1.5-3 2.88-1.23c1.17 1.42 1.87 3.24 1.87 5.23 0 1.3-.3 2.52-.83 3.61L17 14z" />
+                                        </svg>
+
+                                    </span>
+                                    <span class="replyt text-[0.9rem] font-bold">Everyone can reply</span>
+                                </div>
+                                <div class="break w-[100%] h-[2px] mt-[20px] bg-gray-700"></div>
+                                <div class="iconspluspost mt-[20px] flex items-center justify-between w-[100%]">
+                                    <div class="icons w-[50%]">
+
+                                        <ul class="flex justify-between">
+                                            <li>
+                                                <svg viewBox="0 0 24 24" fill="currentColor"
+                                                    style="color: rgb(29, 155, 240); width: 20px; height: 20px;"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g>
+                                                        <path
+                                                            d="M3 5.5C3 4.119 4.119 3 5.5 3h13C19.881 3 21 4.119 21 5.5v13c0 1.381-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.881 3 18.5v-13zM5.5 5c-.276 0-.5.224-.5.5v9.086l3-3 3 3 5-5 3 3V5.5c0-.276-.224-.5-.5-.5h-13zM19 15.414l-3-3-5 5-3-3-3 3V18.5c0 .276.224.5.5.5h13c.276 0 .5-.224.5-.5v-3.086zM9.75 7C8.784 7 8 7.784 8 8.75s.784 1.75 1.75 1.75 1.75-.784 1.75-1.75S10.716 7 9.75 7z" />
+                                                    </g>
+                                                </svg>
+
+                                            </li>
+                                            <li>
+                                                <svg viewBox="0 0 24 24" fill="currentColor"
+                                                    style="color: rgb(29, 155, 240); width: 20px; height: 20px;"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g>
+                                                        <path
+                                                            d="M3 5.5C3 4.119 4.12 3 5.5 3h13C19.88 3 21 4.119 21 5.5v13c0 1.381-1.12 2.5-2.5 2.5h-13C4.12 21 3 19.881 3 18.5v-13zM5.5 5c-.28 0-.5.224-.5.5v13c0 .276.22.5.5.5h13c.28 0 .5-.224.5-.5v-13c0-.276-.22-.5-.5-.5h-13zM18 10.711V9.25h-3.74v5.5h1.44v-1.719h1.7V11.57h-1.7v-.859H18zM11.79 9.25h1.44v5.5h-1.44v-5.5zm-3.07 1.375c.34 0 .77.172 1.02.43l1.03-.86c-.51-.601-1.28-.945-2.05-.945C7.19 9.25 6 10.453 6 12s1.19 2.75 2.72 2.75c.85 0 1.54-.344 2.05-.945v-2.149H8.38v1.032H9.4v.515c-.17.086-.42.172-.68.172-.76 0-1.36-.602-1.36-1.375 0-.688.6-1.375 1.36-1.375z" />
+                                                    </g>
+                                                </svg>
+
+                                            </li>
+                                            <li>
+                                                <svg viewBox="0 0 33 32" fill="currentColor"
+                                                    style="color: rgb(29, 155, 240); width: 20px; height: 20px;"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g>
+                                                        <path
+                                                            d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466" />
+                                                    </g>
+                                                </svg>
+
+                                            </li>
+                                            <li>
+                                                <svg viewBox="0 0 24 24" fill="currentColor"
+                                                    style="color: rgb(29, 155, 240); width: 20px; height: 20px;"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g>
+                                                        <path
+                                                            d="M6 5c-1.1 0-2 .895-2 2s.9 2 2 2 2-.895 2-2-.9-2-2-2zM2 7c0-2.209 1.79-4 4-4s4 1.791 4 4-1.79 4-4 4-4-1.791-4-4zm20 1H12V6h10v2zM6 15c-1.1 0-2 .895-2 2s.9 2 2 2 2-.895 2-2-.9-2-2-2zm-4 2c0-2.209 1.79-4 4-4s4 1.791 4 4-1.79 4-4 4-4-1.791-4-4zm20 1H12v-2h10v2zM7 7c0 .552-.45 1-1 1s-1-.448-1-1 .45-1 1-1 1 .448 1 1z" />
+                                                    </g>
+                                                </svg>
+
+                                            </li>
+                                            <li>
+                                                <svg viewBox="0 0 24 24" fill="currentColor"
+                                                    style="color: rgb(29, 155, 240); width: 20px; height: 20px;"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g>
+                                                        <path
+                                                            d="M8 9.5C8 8.119 8.672 7 9.5 7S11 8.119 11 9.5 10.328 12 9.5 12 8 10.881 8 9.5zm6.5 2.5c.828 0 1.5-1.119 1.5-2.5S15.328 7 14.5 7 13 8.119 13 9.5s.672 2.5 1.5 2.5zM12 16c-2.224 0-3.021-2.227-3.051-2.316l-1.897.633c.05.15 1.271 3.684 4.949 3.684s4.898-3.533 4.949-3.684l-1.896-.638c-.033.095-.83 2.322-3.053 2.322zm10.25-4.001c0 5.652-4.598 10.25-10.25 10.25S1.75 17.652 1.75 12 6.348 1.75 12 1.75 22.25 6.348 22.25 12zm-2 0c0-4.549-3.701-8.25-8.25-8.25S3.75 7.451 3.75 12s3.701 8.25 8.25 8.25 8.25-3.701 8.25-8.25z" />
+                                                    </g>
+                                                </svg>
+                                            </li>
+                                            <li><svg viewBox="0 0 24 24" fill="currentColor"
+                                                    style="color: rgb(29, 155, 240); width: 20px; height: 20px;"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g>
+                                                        <path
+                                                            d="M6 3V2h2v1h6V2h2v1h1.5C18.88 3 20 4.119 20 5.5v2h-2v-2c0-.276-.22-.5-.5-.5H16v1h-2V5H8v1H6V5H4.5c-.28 0-.5.224-.5.5v12c0 .276.22.5.5.5h3v2h-3C3.12 20 2 18.881 2 17.5v-12C2 4.119 3.12 3 4.5 3H6zm9.5 8c-2.49 0-4.5 2.015-4.5 4.5s2.01 4.5 4.5 4.5 4.5-2.015 4.5-4.5-2.01-4.5-4.5-4.5zM9 15.5C9 11.91 11.91 9 15.5 9s6.5 2.91 6.5 6.5-2.91 6.5-6.5 6.5S9 19.09 9 15.5zm5.5-2.5h2v2.086l1.71 1.707-1.42 1.414-2.29-2.293V13z" />
+                                                    </g>
+                                                </svg>
+                                            </li>
+                                            <li><svg viewBox="0 0 24 24" fill="currentColor"
+                                                    style="color: rgb(29, 155, 240); width: 20px; height: 20px;"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g>
+                                                        <path
+                                                            d="M12 7c-1.93 0-3.5 1.57-3.5 3.5S10.07 14 12 14s3.5-1.57 3.5-3.5S13.93 7 12 7zm0 5c-.827 0-1.5-.673-1.5-1.5S11.173 9 12 9s1.5.673 1.5 1.5S12.827 12 12 12zm0-10c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 17.77c-1.665-1.241-6.5-5.196-6.5-9.27C5.5 6.916 8.416 4 12 4s6.5 2.916 6.5 6.5c0 4.073-4.835 8.028-6.5 9.27z" />
+                                                    </g>
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="postbutt">
+                                        <button
+                                            class="Post bg-white py-2 px-5 rounded-3xl font-bold text-black">Post</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-[20px] bg-gray-700 flex w-[100%] h-[2px] "></div>
+                        <!-- <div class="mt-[20px] bg-gray-700 w-[100%] h-[2px] "></div> -->
+                    </div>
+                    <div class="posts mt-[20px] w-[100%] flex flex-col gap-[20px]">
+                        <div class="post1 flex w-[93%] ml-[20px]">
+                            <!-- https://pbs.twimg.com/profile_images/1278732829749391365/HpJH5w3l_400x400.jpg -->
+                            <div class="dp1 w-[40px] h-[40px] rounded-full bg-black"><img
+                                    src="https://pbs.twimg.com/profile_images/1278732829749391365/HpJH5w3l_400x400.jpg"
+                                    alt="">
+                            </div>
+                            <div class="ml-[10px] pcon1 flex flex-col w-[100%] gap-[2px]">
+                                <div class="pcon1h flex justify-between items-center">
+                                    <div class="pconh1c flex gap-[6px] items-center">
+                                        <div class=" accnt1name font-bold text-[14px]">Neymar Jr</div>
+                                        <div class="ver">
+                                            <svg viewBox="0 0 22 22" fill="currentColor"
+                                                style="color: rgb(29, 155, 240); width: 18px; height: 18px;"
+                                                aria-label="Verified account" role="img"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g>
+                                                    <path
+                                                        d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div class="accnt1uname text-gray-500 text-[14px]">@neymarjr
+                                            ·
+                                            3h
+                                        </div>
+                                    </div>
+                                    <div class="pconh1xoptions flex">
+                                        <ul class="flex gap-[10px]">
+                                            <li>
+                                                <svg viewBox="0 0 33 32" fill="currentColor"
+                                                    style="color: rgb(55, 65, 81); width: 20px; height: 20px;"
+                                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                    <g>
+                                                        <path
+                                                            d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </li>
+                                            <li>
+                                                <svg viewBox="0 0 24 24" fill="currentColor"
+                                                    style="color: rgb(55, 65, 81); width: 20px; height: 20px;"
+                                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                    <g>
+                                                        <path
+                                                            d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="post1cap">Santos sempre Santos 🤍🖤</div>
+                                <div class="post1pic w-[85%] h-[500px] mt-[10px] overflow-hidden">
+                                    <img src="https://pbs.twimg.com/media/GuRJctvXYAADXw7?format=jpg&name=large" alt=""
+                                        class="picpost w-full h-full object-cover rounded-3xl">
+                                </div>
+                                <div class="lcsg">
+                                    <ul class="flex justify-between items-center text-gray-500 text-[14px]">
+                                        <li class="flex items-center">
+                                            <div class="logoc box-border rounded-full p-[7px]">
+                                                <svg viewBox="0 0 24 24" fill="currentColor"
+                                                    class="w-[18px] h-[18px] text-gray-500 cursor-pointer"
+                                                    onmouseover="commnhover()" onmouseout="commnout()"
+                                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                    <!-- <div class="commc">420</div> -->
+                                                    <g>
+                                                        <path
+                                                            d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="commc cursor-pointer" onmouseover="commnhover()"
+                                                onmouseout="commnout()">420</div>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <div class="retweetc box-border rounded-full p-[7px]">
+
+                                                <svg viewBox="0 0 24 24" fill="currentColor"
+                                                    class="w-[18px] h-[18px] cursor-pointer text-gray-500"
+                                                    onmouseover="retweethover()" onmouseout="retweetout()"
+                                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                    <g>
+                                                        <path
+                                                            d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="retc cursor-pointer" onmouseover="retweethover()"
+                                                onmouseout="retweetout()">120</div>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <div class="likelc box-border rounded-full p-[7px]">
+                                                <svg viewBox="0 0 24 24" fill="currentColor" onmouseover="likehover()"
+                                                    onmouseout="likeout()"
+                                                    class="w-[18px] h-[18px] text-gray-500 cursor-pointer"
+                                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                    <g>
+                                                        <path
+                                                            d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="likec cursor-pointer" onmouseover="likehover()"
+                                                onmouseout="likeout()">3.4k</div>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <div class="graphlc box-border rounded-full p-[7px] cursor-pointer">
+                                                <svg viewBox="0 0 24 24" fill="currentColor" onmouseover="graphhover()"
+                                                    onmouseout="graphout()" class="w-[18px] h-[18px] text-gray-500"
+                                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                    <g>
+                                                        <path
+                                                            d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="graphc cursor-pointer" onmouseover="graphhover()"
+                                                onmouseout="graphout()">84k</div>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="savec box-border rounded-full p-[7px] cursor-pointer">
+                                                <svg viewBox="0 0 24 24" fill="currentColor"
+                                                    class="w-[18px] h-[18px] text-gray-500" onmouseover="savehover()"
+                                                    onmouseout="saveout()" xmlns="http://www.w3.org/2000/svg"
+                                                    aria-hidden="true">
+                                                    <g>
+                                                        <path
+                                                            d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z" />
+                                                    </g>
+                                                </svg>
+
+                                            </div>
+                                            <div class="sharec box-border rounded-full p-[7px] cursor-pointer">
+                                                <svg viewBox="0 0 24 24" fill="currentColor"
+                                                    class="w-[18px] h-[18px] text-gray-500" onmouseover="sharehover()"
+                                                    onmouseout="shareout()" xmlns="http://www.w3.org/2000/svg"
+                                                    aria-hidden="true">
+                                                    <g>
+                                                        <path
+                                                            d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- <div class="flex w-[100%] h-[2px] bg-gray-500"></div> -->
+                            </div>
+                            <!-- <div class="flex w-[100%] h-[2px] bg-gray-500"></div> -->
+                        </div>
+                        <div class="flex w-[100%] h-[2px] bg-gray-500"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right w-[40%] box-border no-scrollbar">
+                <div class="rightcont relative left-10.5 top-2 flex
+                flex-col border-2 gap-6">
+                    <div class="searchbox flex items-center w-[65%]">
+                        <div class="searchlogo absolute left-3.5">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" width="20" height="20" fill="#374151">
+                                <g>
+                                    <path
+                                        d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z">
+                                    </path>
+                                </g>
+                            </svg>
+
+                        </div>
+                        <input type="text" name="" id=""
+                            class="rightrightboxes search border-1 border-gray-700 rounded-3xl h-10 w-[354.125] pl-10 text-[0.9rem] text-white focus:outline-none"
+                            placeholder="Search" onclick="blue()">
+                    </div>
+                    <div class="rightrightboxes firstbox rounded-[14px] h-38 w-[354.125px] border-2 border-gray-700 text-white">
+                        <div class="subtoprem ml-4 mt-2 flex flex-col gap-2.5">
+                            <div class="subtopremh font-bold text-[1.3rem]">Subscribe to Premium</div>
+                            <div class="subtopremc gap-2.5 flex flex-col">
+                                <div class="subtopremct text-[15px]">Subscribe to unlock new features and if eligible,
+                                    receive a share of revenue</div>
+                                <button
+                                    class="subscribe bg-blue-500 w-[130px] py-1.5 rounded-2xl text-[15px] font-bold">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="rightrightboxes secondbox rounded-[14px] h-130 w-[354.125px] border-2 border-gray-700 text-white flex justify-center">
+                        <div class="secondboxc w-[90%] h-[90%] flex flex-col gap-6">
+                            <div class="whatshapp mt-2">
+                                <div class="whatshapph font-bold text-[1.3rem]">What's Happening</div>
+                            </div>
+                            <div class="live flex gap-2.5">
+                                <img src="./images/wh.jpeg" class="img w-[79.1px] h-[79.1px] rounded-[12px]" alt="">
+                                <div class="livec">
+                                    <div class="liveh font-bold">WWE Speed</div>
+                                    <div class="livet text-gray-500 text-[14px]">LIVE</div>
+                                </div>
+                            </div>
+                            <div class="trending1 flex justify-between items-center">
+                                <div class="trending1c flex flex-col">
+                                    <div class="trending1h text-gray-500 text-[13px]">Politics · Trending</div>
+                                    <div class="hash1 font-bold">#Khamenei</div>
+                                    <div class="post1count text-gray-500 text-[13px]">1,356 posts</div>
+                                </div>
+                                <div class="info1 text-[25px]">
+                                    <svg viewBox="0 0 24 24" width="20" height="20"
+                                        class="text-gray-500 fill-current r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"
+                                        aria-hidden="true">
+                                        <g>
+                                            <path
+                                                d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                            </path>
+                                        </g>
+                                    </svg>
+
+
+                                </div>
+                            </div>
+                            <div class="trending2 flex justify-between items-center">
+                                <div class="trending2c flex flex-col">
+                                    <div class="trending2h text-gray-500 text-[13px]">Trending in India</div>
+                                    <div class="hash2 font-bold">लुधियाना वेस्ट</div>
+                                </div>
+                                <div class="info2 text-[25px]">
+                                    <svg viewBox="0 0 24 24" width="20" height="20"
+                                        class="text-gray-500 fill-current r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"
+                                        aria-hidden="true">
+                                        <g>
+                                            <path
+                                                d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                            </path>
+                                        </g>
+                                    </svg>
+
+
+                                </div>
+                            </div>
+                            <div class="trending3 flex justify-between items-center">
+                                <div class="trending3c flex flex-col">
+                                    <div class="trending3h text-gray-500 text-[13px]">Trending in India</div>
+                                    <div class="hash3 font-bold">#BrahmaMuhurta</div>
+                                </div>
+                                <div class="info3 text-[25px]">
+                                    <svg viewBox="0 0 24 24" width="20" height="20"
+                                        class="text-gray-500 fill-current r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"
+                                        aria-hidden="true">
+                                        <g>
+                                            <path
+                                                d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                            </path>
+                                        </g>
+                                    </svg>
+
+
+                                </div>
+                            </div>
+                            <div class="trending4 flex justify-between items-center">
+                                <div class="trending4c flex flex-col">
+                                    <div class="trending4h text-gray-500 text-[13px]">Trending in India</div>
+                                    <div class="hash4 font-bold">#HBDNiteshRane</div>
+                                    <div class="post4count text-gray-500 text-[13px]">24.3K posts</div>
+                                </div>
+                                <div class="info4 text-[25px]">
+                                    <svg viewBox="0 0 24 24" width="20" height="20"
+                                        class="text-gray-500 fill-current r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"
+                                        aria-hidden="true">
+                                        <g>
+                                            <path
+                                                d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                            </path>
+                                        </g>
+                                    </svg>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightrightboxes thirdbox rounded-[14px] h-38 w-[354.125px] border-2 border-gray-700 text-white">
+
+                    </div>
+                    <div class="rightrightboxes fourthbox rounded-[14px] h-38 w-[354.125px] border-2 border-gray-700 text-white"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
